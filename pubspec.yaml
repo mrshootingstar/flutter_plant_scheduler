@@ -28,8 +28,19 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  bloc: ^8.0.1
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.2
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+  local_storage_plants_api:
+    path: packages/local_storage_plants_api
+  plants_api:
+    path: packages/plants_api
+  plants_repository:
+    path: packages/plants_repository
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -37,8 +48,12 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  bloc_test: ^9.0.1
   flutter_test:
     sdk: flutter
+  mockingjay: ^0.3.0
+  mocktail: ^0.3.0
+  very_good_analysis: ^3.0.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
