@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:plantly/home/view/homepage.dart';
+import 'package:plantly/themes/themes.dart';
 import 'package:plants_repository/plants_repository.dart';
 
 class App extends StatelessWidget {
@@ -23,8 +24,8 @@ class AppView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // theme: FlutterTodosTheme.light,
-      // darkTheme: FlutterTodosTheme.dark,
+      theme: FlutterTodosTheme.light,
+      darkTheme: FlutterTodosTheme.dark,
       // localizationsDelegates: AppLocalizations.localizationsDelegates,
       // supportedLocales: AppLocalizations.supportedLocales,
       home: const MyHomePage(title: "Test"),
